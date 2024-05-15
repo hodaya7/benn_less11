@@ -1,0 +1,21 @@
+console.log(4<9);//true
+console.log((2*3+4)*(7*7));//490
+console.log(18+18);//36
+console.log(10==10);//true
+console.log(10==10&&20==30);//false
+console.log(10==10||20==30);//true
+console.log(20==30||10==10);//true
+console.log(!3);//false
+console.log(3);//3
+console.log((33>20)&&(2<12)&&10);//    10
+console.log(true&&true);//true
+console.log(true&&false);//false
+console.log(true||false);//true
+console.log(false||true);//true
+console.log((!10)&&(10));//false
+console.log((!10)&&(!10));//false
+console.log((5!=5)&&(5!=5));//false
+console.log(2===2||3==3);//true
+console.log((2===2)&&(3==3));//true
+console.log(40<=30**1>=4);//false
+console.log(13>=3||47>=5);//true
