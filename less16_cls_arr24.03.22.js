@@ -37,7 +37,7 @@ console.log(arr[3]);
 console.log(arr[4]);
 console.log(arr[5]);
 
-function inc(element,index) {
+function inc(element,index) {//מונקציה שמקבלת 2 דברים ומבינים שזה לטיפול באיברי מערך
   // intArr[index]+=10;
    intArr[index]=element+10;
 }
@@ -53,3 +53,9 @@ function rev(element,index) {
 boolArr=[true,false,false,true,true]
 boolArr.forEach(rev)
 console.log(boolArr);//[ false, true, true, false, false ]
+
+function printGreating(element, insex) {
+    console.log();
+}
+var names=["ben","yossi","haim"];
+names.forEach(printGreating)
