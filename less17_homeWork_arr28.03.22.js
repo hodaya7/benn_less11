@@ -1,19 +1,3 @@
-function inc(element,index) {//מונקציה שמקבלת 2 דברים ומבינים שזה לטיפול באיברי מערך
-    // intArr[index]+=10;
-     intArr[index]=element+10;
-  }
-  
-  var intArr=[10,20,30,40,50];
-  intArr.forEach(inc);
-  console.log(intArr);//[ 20, 30, 40,50,60 ]
-
-function chkLength(element,index) {
-    return element.length>=5? true:false;
-} 
-
-var strArr=["aaaaa","bbb","ccccccc","dd"]
-console.log(strArr.filter(chkLength));//[ 'aaaaa', 'ccccccc' ]
-
 console.log("__________hw____________");
 
 var strArr2=["aaaaa","ee","bbb","ccccccc","dd"]
@@ -41,3 +25,9 @@ var resArr= intArr2.filter(chkDivide);
 console.log(resArr); //[ 20, 40 ] 
 
 
+const ages = [3, 10, 18, 20];
+function checkAge(age) {
+  return age > 18;
+}
+
+console.log(ages.findIndex(checkAge));//3

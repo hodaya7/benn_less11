@@ -54,8 +54,3 @@ boolArr=[true,false,false,true,true]
 boolArr.forEach(rev)
 console.log(boolArr);//[ false, true, true, false, false ]
 
-function printGreating(element, insex) {
-    console.log();
-}
-var names=["ben","yossi","haim"];
-names.forEach(printGreating)
