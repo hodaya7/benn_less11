@@ -14,6 +14,7 @@ function print(element, index) {
 // hi
 // hi
 
+//for
 function dupFor(str, num) {
     for (let i = 0; i < num; i++) //כשידוע לרוב מתי מסתיימת הלולאה
         console.log(str);

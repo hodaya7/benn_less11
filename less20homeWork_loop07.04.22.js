@@ -65,15 +65,24 @@ printPyramid(5);
 // *****
 
 //5
+//בודק כפילויות
 function findDup(strArr) {
-    var counts = []
-    for (let i = 0; i < strArr.length; i++) {
-        counts[strArr[i]] = 0;
-    }
-    for (let i = 0; i < strArr.length; i++) {
-        counts[strArr[i]]++;
-    }
+    var counts = {}
+    // for (let i = 0; i < strArr.length; i++) {
+    //     counts[strArr[i]] = 0;
+    // }
+    // for (let i = 0; i < strArr.length; i++) {
+    //     counts[strArr[i]]++;
+    // }
 
+    //אם לא קיים תאתחל באחד , אם קיים תעלה אותו
+    for (let i = 0; i < strArr.length; i++) {
+        if (counts[strArr[i]] == null)
+            counts[strArr[i]] = 1;
+        else
+            counts[strArr[i]]++;
+    }
+    //console.log(counts);
     var obj = {};
     for (let i in counts) {
         if (counts[i] > 1)
@@ -211,30 +220,30 @@ function sumNum(arr, num) {
     return sum;
 }
 
-console.log(sumNum([1,2,3,4], 5));//6
-
+console.log(sumNum([1, 2, 3, 4], 5));//6
+console.log(sumNum([1, 2, 3, 4], 20));//10
 //10
 function falseIndex(arr) {
     i = 0;
-    while (i<arr.length) {
-        if(!arr[i])
-        return i;
+    while (i < arr.length) {
+        if (!arr[i])
+            return i;
         i++;
     }
     return -1;
 }
 
-console.log(falseIndex([true,true, false, false]));//2
+console.log(falseIndex([true, true, false, false]));//2
 
 //10
 function isHello(arr) {
-    i=0;
-    while (i<arr.length) {
-       if(i%2!=0&&arr[i]=="Hello")
-       return i;
+    i = 0;
+    while (i < arr.length) {
+        if (i % 2 != 0 && arr[i] == "Hello")
+            return i;
         i++;
     }
     return -1;
 }
 
-console.log(isHello(["ok", "love"," Hello","Hello"]));//3
+console.log(isHello(["ok", "love", " Hello", "Hello"]));//3
