@@ -66,6 +66,7 @@ printPyramid(5);
 
 //5
 //בודק כפילויות
+//הכנסתי לאובייקט  מונים
 function findDup(strArr) {
     var counts = {}
     // for (let i = 0; i < strArr.length; i++) {
